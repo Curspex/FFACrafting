@@ -39,7 +39,7 @@ public class FFACraftingConfiguration {
 
 	private Set<Material> allowedItems = new HashSet<Material>();
 	public Set<Material> getAllowedItems() { return this.allowedItems; }
-	public void setAllowedItems(final List<String> newFormat, final boolean clear) { this.setAllowedItems(new HashSet<>(newFormat), clear); }
+	public void setAllowedItems(final List<String> newFormat, final boolean clear) { this.setAllowedItems(new HashSet<String>(newFormat), clear); }
 	@SuppressWarnings("deprecation")
 	public void setAllowedItems(final Set<String> newFormat, final boolean clear)
 	{
